@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bn"
+    android:orientation="vertical"
+    tools:context=".SignUp">
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#9F000000"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="109dp"
+                android:layout_marginTop="108dp"
+                android:layout_marginEnd="109dp"
+                android:fontFamily="@font/biorhyme_extrabold"
+                android:text="Register"
+                android:textColor="@color/white"
+                android:textSize="44sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/register"
+                android:layout_width="208dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="232dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/input_bg"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:paddingLeft="60dp"
+                android:paddingTop="13dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="13dp"
+                android:text="RIGISTER"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+            <EditText
+                android:id="@+id/inputpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/input_bg"
+                android:drawableLeft="@drawable/baseline_security_24"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:paddingLeft="20dp"
+                android:paddingTop="13dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="13dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/inputemail" />
+
+
+            <EditText
+                android:id="@+id/inputpassword1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/input_bg"
+                android:drawableLeft="@drawable/baseline_security_24"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:paddingLeft="20dp"
+                android:paddingTop="13dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="13dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/inputemail" />
+
+
+            <TextView
+                android:id="@+id/newaccount"
+                android:layout_width="290dp"
+                android:layout_height="27dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="40dp"
+                android:paddingLeft="50dp"
+                android:text="Already Gave Account?"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/register" />
+
+
+            <EditText
+                android:id="@+id/inputemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/input_bg"
+                android:drawableLeft="@drawable/baseline_email_24"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="E-Mail"
+                android:inputType="textPersonName"
+                android:paddingLeft="20dp"
+                android:paddingTop="13dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="13dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bn"
+    android:orientation="vertical"
+    tools:context=".SignUp">
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#9F000000"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/forgotpassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="50dp"
+                android:text="Forgot Password?"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/inputpassword" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="104dp"
+                android:layout_marginEnd="110dp"
+                android:fontFamily="@font/biorhyme_extrabold"
+                android:text="LOGIN"
+                android:textColor="@color/white"
+                android:textSize="44sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/inputemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="48dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/input_bg"
+                android:drawableLeft="@drawable/baseline_email_24"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="E-Mail"
+                android:inputType="textPersonName"
+                android:paddingLeft="20dp"
+                android:paddingTop="13dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="13dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+            <EditText
+                android:id="@+id/inputpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/input_bg"
+                android:drawableLeft="@drawable/baseline_security_24"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:paddingLeft="20dp"
+                android:paddingTop="13dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="13dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/inputemail" />
+
+            <Button
+                android:id="@+id/btnLogIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/input_bg"
+                android:text="LOGIN"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/forgotpassword" />
+
+            <TextView
+                android:id="@+id/newaccount"
+                android:layout_width="290dp"
+                android:layout_height="27dp"
+                android:layout_marginStart="64dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="57dp"
+                android:paddingLeft="50dp"
+                android:text="Create New Account?"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnLogIn" />
+
+
+            <TextView
+                android:id="@+id/or"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="200dp"
+                android:text="OR"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/view"
+                app:layout_constraintTop_toBottomOf="@+id/newaccount" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="150dp"
+                android:layout_height="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/newaccount" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="150dp"
+                android:layout_height="5dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="15dp"
+                android:background="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/view"
+                app:layout_constraintTop_toBottomOf="@+id/newaccount" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView2"
+                android:layout_width="73dp"
+                android:layout_height="63dp"
+                android:layout_marginStart="38dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="108dp"
+                app:cardCornerRadius="50sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/bm" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView3"
+                android:layout_width="73dp"
+                android:layout_height="63dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="49dp"
+                android:layout_marginBottom="108dp"
+                app:cardCornerRadius="50sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view2">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/bf" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="73dp"
+                android:layout_height="63dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="55dp"
+                app:cardCornerRadius="50sp"
+                app:layout_constraintEnd_toStartOf="@+id/cardView3"
+                app:layout_constraintStart_toEndOf="@+id/cardView2"
+                app:layout_constraintTop_toBottomOf="@+id/or">
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/bs" />
+            </androidx.cardview.widget.CardView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
